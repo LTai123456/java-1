@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 import com.jt.common.exception.ServiceException;
+import com.jt.common.vo.CheckBox;
 import com.jt.common.vo.PageObject;
 import com.jt.sys.dao.SysRoleDao;
 import com.jt.sys.dao.SysRoleMenuDao;
@@ -136,4 +137,9 @@ public class SysRoleServiceImpl implements SysRoleService {
 		}
 		return counts;
 	}
+	@Override
+    public List<CheckBox> findObjects() {
+     	return sysRoleDao.findObjects();
+    }
+
 }

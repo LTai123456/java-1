@@ -73,5 +73,10 @@ public class SysRoleController {
 		  sysRoleService.checkRoleByName(name);
 	 return new JsonResult("check ok");
 	 }
+	 @RequestMapping("doFindRoles")
+	 @ResponseBody
+	 public JsonResult doFindRoles(){
+	 	 return new JsonResult(sysRoleService.findObjects());
+	 }
 	
 }

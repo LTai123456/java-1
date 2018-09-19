@@ -15,11 +15,9 @@ public interface SysUserDao {
 	
 	int getRowCount(@Param("username") String username);
 	
-	
 	int validById(
 			@Param("id")Integer id,
 			@Param("valid")Integer valid,
 			@Param("modifiedUser")String modifiedUser);
-
 }
 

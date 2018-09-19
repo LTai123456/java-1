@@ -67,6 +67,12 @@
 		sys_roles
 		where name=#{name}
 	</select>
+	 <select id="findObjects"
+            resultType="com.jt.common.vo.CheckBox">
+           select id,name
+           from sys_roles
+    </select>
+	
 </mapper>
 
 

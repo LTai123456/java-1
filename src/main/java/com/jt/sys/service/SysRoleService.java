@@ -1,7 +1,9 @@
 package com.jt.sys.service;
 
+import java.util.List;
 import java.util.Map;
 
+import com.jt.common.vo.CheckBox;
 import com.jt.common.vo.PageObject;
 import com.jt.sys.entry.SysRole;
 import com.jt.sys.vo.SysRoleMenuReult;
@@ -17,4 +19,7 @@ public interface SysRoleService {
 	SysRoleMenuReult findObjectById(Integer id);
 	int updateObject(SysRole entity,Integer[] menuIds);
 	int checkRoleByName(String name);
+	List<CheckBox> findObjects() ;
+    
+
 }

@@ -36,5 +36,9 @@ public class SysUserController {
 		sysUserService.validById(id,valid,"admin");//"admin"用户将来是登陆用户
 		return new JsonResult("update ok");
 	}
+	@RequestMapping("doUserEditUI")
+	public String doUserEditUI(){
+		return "sys/user_edit";
+	}
 }
 

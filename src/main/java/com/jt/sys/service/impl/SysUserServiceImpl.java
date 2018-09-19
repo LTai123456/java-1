@@ -7,7 +7,9 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 import com.jt.common.exception.ServiceException;
+import com.jt.common.vo.CheckBox;
 import com.jt.common.vo.PageObject;
+import com.jt.sys.dao.SysRoleDao;
 import com.jt.sys.dao.SysUserDao;
 import com.jt.sys.dao.SysUserRoleDao;
 import com.jt.sys.service.SysUserService;
@@ -20,7 +22,7 @@ public class SysUserServiceImpl implements SysUserService {
 	private SysUserDao sysUserDao;
 	@Autowired
 	private SysUserRoleDao sysUserRoleDao;
-
+	
    @Override
 	public PageObject<SysUserDeptResult> findPageObjects(String username, 
 			Integer pageCurrent) {
